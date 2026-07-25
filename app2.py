@@ -30,6 +30,15 @@ from langchain_core.prompts import (
 load_dotenv()
 
 
+# Path of the Chroma vector database
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+CHROMA_PATH = os.path.join(
+    BASE_DIR,
+    "Chroma_vector_store"
+)
+
+
 # =====================================================
 # Page Configuration
 # =====================================================
@@ -398,7 +407,7 @@ if mode == "📚 Transformer":
 
         vectorstore = Chroma(
 
-            persist_directory="Chroma_vector_store",
+            persist_directory=CHROMA_PATH,
 
             embedding_function=embedding_model
 
