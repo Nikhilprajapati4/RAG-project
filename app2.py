@@ -348,7 +348,7 @@ prompt = ChatPromptTemplate.from_messages(
             """
             You are a helpful document question-answering assistant.
 
-            Answer the question using your own iintelligence understand the question and spelling mistake use your intelligence and give answer as per the provided context.
+            Answer the question using your own intelligence understand the question and check the context and, answer as per the provided context.
 
             If the answer is not available in the context, say:
 
