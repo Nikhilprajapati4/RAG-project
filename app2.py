@@ -348,13 +348,11 @@ prompt = ChatPromptTemplate.from_messages(
             """
             You are a helpful document question-answering assistant.
 
-            Answer the question using ONLY the provided context.
+            Answer the question using your own iintelligence understand the question and spelling mistake use your intelligence and give answer as per the provided context.
 
             If the answer is not available in the context, say:
 
             Sorry, I don't know based on the provided document.
-
-            Do not use outside knowledge.
             """
 
         ),
